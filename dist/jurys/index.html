@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Joy Star's Story</title>
+
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="white-line"></div>
+      <div class="navigation">
+	<a href="/">Home</a>
+	<a href="/gallery/">Gallery</a>
+	<a href="/jurys/">Jurys</a>
+	<a href="/contact/">Contact</a>
+      </div>
+      <script>
+	const activeLink = document.querySelector('.navigation a[href="' + location.pathname + '"]');
+	if (activeLink) { activeLink.classList.add('active'); }
+      </script>
+      <img class="top-moons" src="/images/top_moons.png" />
+      <div class="white-line"></div>
+    </div>
+    <h2>Welcome to JoyStar's Story</h2>
+
+    <p>Thank you for visiting.</p>
+    <p>Here you will find a curated selection of my work. These pieces are representative of the different media and styles that I work in and of my range of styles and themes.</p>
+    <p>Please Enjoy!</p>
+  </body>
+</html>

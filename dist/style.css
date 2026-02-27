@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  background-color: #6e085e;
+  padding: 12px 0;
+}
+
+.white-line {
+  height: 5px;
+  width: 100%;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+.navigation {
+  width: fit-content;
+  max-width: 96%;
+  margin: 10px auto;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.navigation a {
+  color: rgb(219, 165, 212);
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  color: #ffffff;
+}
+
+.navigation a.active {
+  color: #ffffff;
+  background-color: rgb(86, 111, 184);
+}
+
+.top-moons {
+  max-width: 700px;
+  width: 96%;
+  margin: 10px auto;
+  display: block
+}
+
+h1 {
+  text-align: center;
+}
