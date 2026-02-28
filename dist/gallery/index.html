@@ -4,9 +4,10 @@
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Joy Star's Story</title>
-
     <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/gallery.css">
+
+    <title>Joy Star's Story</title>
   </head>
   <body>
     <div id="header">
@@ -24,6 +25,50 @@
       <img class="top-moons" src="/images/top_moons.png" />
       <div class="white-line"></div>
     </div>
-    images
+    <div class="content-background">
+      <div class="content">
+        <script src="/gallery.js"></script>
+        <script>
+          appendGallery({
+            srcs: [
+              '/images/space_dragon_mask_wide.jpg',
+              '/images/sam_green_falls.jpg',
+              '/images/owl_moon_moss.jpg',
+              '/images/foxes_page_corner.jpg',
+              '/images/blue_moon_top.jpg',
+              '/images/dice_on_floor.jpg',
+            ],
+            orientations: 'hvvhhh',
+            $previousElement: document.currentScript
+          });
+        </script>
+        <script>
+          appendGallery({
+            srcs: [
+              '/images/wyn_page_corner.png',
+              '/images/wind_chimes.jpg',
+              '/images/butterfly_mask_wide.jpg',
+              '/images/green_blue_dragon_masks.jpg',
+              '/images/orange_moon.jpg',
+              '/images/cat_window_painting.jpg',
+            ],
+            orientations: 'hvhhhv',
+            $previousElement: document.currentScript
+          });
+        </script>
+        <script>
+          appendGallery({
+            srcs: [
+              '/images/black_brown_mask_falls.png',
+            ],
+            orientations: 'h',
+            $previousElement: document.currentScript
+          });
+        </script>
+      </div>
+    </div>
+    <div id="footer">
+      ©2020 by Joy Star's Story.
+    </div>
   </body>
 </html>
