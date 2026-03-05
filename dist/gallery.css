@@ -6,10 +6,21 @@
   text-align: center;
 }
 
+.gallery.big {
+  width: 100%;
+  max-width: 100%;
+}
+
 .gallery .hero {
   max-width: 100%;
   margin-bottom: 15px;
   height: min(560px, calc(72.75vmin - 3em));
+}
+
+.gallery.big .hero {
+  max-width: 100%;
+  margin-bottom: 15px;
+  height: min(850px, calc(100vmin));
 }
 
 .gallery .caption {

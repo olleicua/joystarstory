@@ -18,7 +18,7 @@
 
 <script src="/gallery.js"></script>
 <script>
-  appendGallery({
+  var $gallery = appendGallery({
     srcs: [
       '/images/bandit_camp_night.jpg',
       '/images/yarn.jpg',
@@ -28,4 +28,6 @@
     orientations: 'hvhh',
     $previousElement: document.currentScript
   });
+
+  $gallery.classList.add('big');
 </script>
