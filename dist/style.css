@@ -214,4 +214,9 @@ h1 {
   .floating-text-block {
     height: auto;
   }
+
+  .content {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
 }

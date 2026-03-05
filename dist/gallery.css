@@ -20,7 +20,7 @@
 .gallery.big .hero {
   max-width: 100%;
   margin-bottom: 15px;
-  height: min(850px, calc(100vmin));
+  height: min(790px, calc(100vmin));
 }
 
 .gallery .caption {
