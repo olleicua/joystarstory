@@ -20,7 +20,7 @@
 .gallery.big .hero {
   max-width: 100%;
   margin-bottom: 15px;
-  height: min(790px, calc(100vmin));
+  height: min(703px, calc(76vmin));
 }
 
 .gallery .caption {
@@ -35,10 +35,18 @@
   justify-content: center;
 }
 
+.gallery.big .thumbnails {
+  gap: 15px 5%;
+}
+
 .gallery .thumbnails img {
   box-sizing: border-box;
   max-width: 22%;
   height: min(120px, calc(16vmin - 0.66em));
+}
+
+.gallery.big .thumbnails img {
+  height: min(136px, calc(16vmin - 0.66em));
 }
 
 .gallery .thumbnails img.selected {
