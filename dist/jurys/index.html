@@ -102,10 +102,26 @@
             I look forward to hearing from you soon!
           </div>
         </div>
+
+        <script>
+          // open in a new tab if not mobile
+          var mobileTestPattern = /Mobi|Android|iPhone|iPad|iPod|Windows Phone|BlackBerry|Opera Mini/i;
+          var targetBlank = !(mobileTestPattern.test(navigator.userAgent));
+
+          var clickableImages = document.querySelectorAll('.two-columns img');
+          for (var i = 0; i < clickableImages.length; i++) {
+            var $img = clickableImages[i];
+            var $a = document.createElement('a');
+            $a.href= $img.src;
+            if (targetBlank) $a.target = '_blank';
+            $img.after($a);
+            $a.append($img);
+          }
+        </script>
       </div>
     </div>
     <div id="footer">
-      ©2020 by Joy Star's Story.
+      ©<script>document.write(new Date().getFullYear());</script> by Joy Star's Story.
     </div>
   </body>
 </html>

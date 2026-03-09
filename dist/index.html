@@ -33,18 +33,6 @@
 
         <h3>Welcome to Joy Star's Story!</h3>
 
-        <p>
-          Creating art is a constant journey of self discovery. For me, that journey has lead me to places I never expected to be and into situations I never thought I would get out of. I spent years trying not to be an artist, only to find that I had no choice.
-        </p>
-
-        ​<p>
-          I now happily find myself living in a tiny studio in the middle of the Vermont woods with nothing standing between me and the paints, dyes, fabric, leather, yarn, and other materials that call for me. I have the absolute pleasure of constantly getting to try new things and create beauty.
-        </p>
-
-        ​<p>
-          Thank you for joining me, if only for a moment.
-        </p>
-
         <script src="/gallery.js"></script>
         <script>
           var $gallery = appendGallery({
@@ -62,10 +50,22 @@
 
           $gallery.classList.add('big');
         </script>
+
+        <p>
+          Creating art is a constant journey of self discovery. For me, that journey has lead me to places I never expected to be and into situations I never thought I would get out of. I spent years trying not to be an artist, only to find that I had no choice.
+        </p>
+
+        ​<p>
+          I now happily find myself living in a tiny studio in the middle of the Vermont woods with nothing standing between me and the paints, dyes, fabric, leather, yarn, and other materials that call for me. I have the absolute pleasure of constantly getting to try new things and create beauty.
+        </p>
+
+        ​<p>
+          Thank you for joining me, if only for a moment.
+        </p>
       </div>
     </div>
     <div id="footer">
-      ©2020 by Joy Star's Story.
+      ©<script>document.write(new Date().getFullYear());</script> by Joy Star's Story.
     </div>
   </body>
 </html>
